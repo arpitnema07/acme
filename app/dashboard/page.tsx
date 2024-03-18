@@ -9,7 +9,7 @@ import {
 } from '@/app/lib/data';
 
 export default async function Page() {
-  const revenue = fetchRevenue();
+  const revenue = await fetchRevenue();
   const latestInvoices = await fetchLatestInvoices();
   const {
     numberOfInvoices,
